@@ -1,0 +1,39 @@
+.mainbg {
+  background-color: #e3e4e8;
+  width: 95%;
+  margin: auto;
+  padding: 40px 40px 140px;
+}
+
+.memberimg {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.memberimgcontainer {
+  width: 250px;
+  height: 250px;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.memberheading {
+  width: 100%;
+  background-color: #d7cfcf;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  font-family: var(--font-family-2);
+  font-size: 1rem;
+  font-weight: 600;
+  white-space: pre-wrap;
+  padding: 10px;
+  border-radius: 10px;
+}
+.memberdesc {
+  text-align: justify;
+  line-height: 2em;
+  color: #5e5d5d;
+}

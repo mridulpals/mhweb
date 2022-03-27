@@ -1,0 +1,94 @@
+.dropdownContainer {
+  height: 64px;
+}
+
+.innerDropdown {
+  border-bottom: 1px solid var(--color-grey-light);
+  font-size: 1em;
+  line-height: 1.45;
+  font-family: var(--font-family-1);
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+
+.innerDropdown .innerToggle {
+  width: 100%;
+  padding: 0.9em 1em;
+  border-bottom: 1px solid var(--color-grey-light);
+  font-size: 1em;
+  line-height: 1.45;
+  font-family: var(--font-family-1);
+  color: #333333 !important;
+  text-align: left;
+  transition: all 0.2s linear;
+  cursor: pointer;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.innerDropdown .innerToggle::after {
+  transform: rotate(-90deg);
+}
+
+.dropdownContainer .dropwdownToggle {
+  padding: 0 1rem;
+  font-size: 1rem;
+  color: #333333 !important;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+.dropdownContainer .dropwdownToggle::after {
+  margin-left: 10px;
+}
+
+.dropdownContainer .dropwdownToggle:hover {
+  color: var(--color-primary) !important;
+}
+
+.dropdownContainer button:hover,
+.dropdownContainer button:focus,
+.dropdownContainer button:active {
+  background-color: transparent;
+  color: inherit !important;
+  border: inherit;
+  box-shadow: none;
+}
+
+.dropdownContainer .menu {
+  border: 1px solid var(--color-grey-light);
+  padding: 0;
+  max-width: max-content;
+  min-width: 240px;
+  max-width: 260px;
+  box-shadow: 0 4px 10px -2px rgb(0 0 0 / 10%);
+  transform: translate(0, 64px) !important;
+}
+
+.menu .item {
+  padding: 0.9em 1em;
+  border-bottom: 1px solid var(--color-grey-light);
+  font-size: 1em;
+  line-height: 1.45;
+  font-family: var(--font-family-1);
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.menu .item:hover,
+.innerDropdown:hover {
+  background-color: var(--color-grey-lightest);
+  color: var(--color-primary);
+}
+
+.innerDropdown .innerMenu {
+  transform: translate(100%, 0) !important;
+  width: 100%;
+}

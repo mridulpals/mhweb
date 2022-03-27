@@ -1,0 +1,100 @@
+.mainMindfulMillennials {
+  background-color: #f0eeee;
+}
+
+.subMindfulMillennials {
+  background-color: #fff;
+  margin: 3rem 2rem;
+  padding: 85px 105px;
+}
+
+.mindfulMillennialsImg {
+  margin: 2rem 7rem;
+}
+
+.required :after {
+  content: "*";
+  color: red;
+}
+
+.millennialsForm {
+  padding-left: 2px;
+}
+
+.label{
+  margin-left: 6px;
+}
+.email,
+.edubg,
+.profbg,
+.cityname
+{
+  width: 60%;
+  height: 50px;
+  border: solid 1px rgb(226, 226, 226);
+  border-radius: 3px;
+}
+
+.namediv{
+ display:flex;
+ width: 60%;
+ /* justify-content: space-between; */
+}
+.name{
+  width: 100%;
+  height: 50px;
+  border: solid 1px rgb(226, 226, 226);
+  border-radius: 3px;
+}
+.namedivone,.namedivtwo{
+  width: 100%;
+}
+.message {
+  width: 100%;
+  height: 120px;
+  border: solid 1px rgb(226, 226, 226);
+  border-radius: 3px;
+}
+
+@media only screen and (max-width: 1052px) {
+  .subMindfulMillennials {
+    padding: 50px;
+  }
+
+  .mindfulMillennialsImg {
+    margin: unset;
+    margin-bottom: 1rem;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+
+  .email,
+  .edubg,
+  .profbg,
+  .cityname
+   {
+    width: 100%;
+    height: 40px;
+
+  }
+  .namediv{
+    width: 100%;
+  }
+  .name{
+  height: 40px;
+  font-size: 0.8rem;
+  }
+}
+
+@media only screen and (max-width: 545px) {
+  .subMindfulMillennials {
+    padding: 25px;
+  }
+
+  .required,
+  .edubghead {
+    font-size: 0.85rem;
+  }
+
+}

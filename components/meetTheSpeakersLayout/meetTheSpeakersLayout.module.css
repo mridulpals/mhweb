@@ -1,0 +1,78 @@
+.pageHeading {
+  width: 100%;
+  text-align: center;
+  color: var(--color-black);
+  line-height: 1.3;
+  font-size: 2.125rem;
+  font-family: var(--font-family-2);
+  font-weight: 700;
+  text-transform: capitalize;
+  padding: 3rem 0;
+  margin: 0 auto;
+  background-color: var(--color-secondary);
+}
+.cardContainer {
+  padding: 3rem 0;
+}
+
+/* --- Speaker Card --- */
+.cardWrapper {
+  padding: 1.25rem 1.25rem 0;
+  border-radius: 8px;
+  margin-bottom: 1.5rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.infoContainer {
+  display: flex;
+}
+
+.imageContainer {
+  min-width: 150px;
+  max-width: 150px;
+  height: 150px;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-right: 1.25rem;
+  background-color: lightblue;
+}
+.cardContent {
+  display: flex;
+  flex-direction: column;
+}
+.heading {
+  line-height: 1.3;
+  font-size: 1.5rem;
+  font-weight: 700;
+  font-family: var(--font-family-2);
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+.date {
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--color-black-light);
+  margin-bottom: 0.5rem;
+}
+.description {
+  font-size: 1rem;
+  height: 72px;
+  overflow: hidden;
+}
+.readMore {
+  width: 100%;
+  margin-top: 1.25rem;
+  border-top: 1px solid var(--color-grey-light);
+  text-align: right;
+}
+.readMoreBtn {
+  cursor: pointer;
+  padding: 0.875rem;
+  background-color: transparent;
+  font-size: 0.875rem;
+  line-height: 1.5;
+  color: var(--color-primary);
+  transition: 0.2s linear;
+}
+.readMoreBtn:hover {
+  color: var(--color-black-light);
+}

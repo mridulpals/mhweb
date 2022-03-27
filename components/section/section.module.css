@@ -1,0 +1,245 @@
+.sectionWrapper {
+  height: max-content;
+  width: 100%;
+  padding: 60px 0 120px;
+}
+.upperHeading {
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  font-family: var(--font-family-2);
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: 35px;
+}
+.heading {
+  font-size: 2.125rem;
+  font-weight: 700;
+  font-family: var(--font-family-2);
+  line-height: 1.3;
+  color: var(--color-black);
+  margin-bottom: 36px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr;
+  justify-content: space-between;
+  column-gap: 5em;
+  width: 100%;
+  height: max-content;
+}
+.reverseContainer {
+  grid-template-columns: 1.2fr 1fr;
+}
+.reverseContainer .textContainer {
+  order: 1;
+}
+.reverseContainer .imageContainer {
+  order: 0;
+}
+
+.textContainer {
+  width: 100%;
+  /* height: 100%; */
+}
+
+.iconContainer {
+  position: relative;
+  width: 80px;
+  height: 35px;
+  margin-bottom: 20px;
+}
+
+.imageContainer {
+  width: 100%;
+  min-height: 200px;
+  max-height: 750px;
+  height: max-content;
+  border-radius: 8px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: var(--color-secondary);
+  /* align-self: end; */
+}
+.imageContainer img {
+  width: 100%;
+  border-radius: 8px;
+}
+.imageContainer p {
+  font-size: 24px;
+  font-family: var(--font-family-2);
+  font-weight: 700;
+  margin-top: 20px;
+}
+
+.description {
+  font-size: 1em;
+  color: var(--color-black);
+}
+.description p {
+  margin-bottom: 1.6em;
+  overflow-wrap: break-word;
+}
+
+.description h1,
+.description h2,
+.description h3,
+.description h4,
+.description h5,
+.description h6 {
+  font-family: var(--font-family-2);
+  margin-top: 3rem;
+}
+
+.description a {
+  color: var(--color-primary);
+}
+
+.firstLetterCaps p:first-of-type:first-letter,
+.firstLetterCapsAllPara p::first-letter {
+  font-size: 50px;
+  line-height: 40px;
+  height: 4rem;
+  text-transform: uppercase;
+  float: left;
+  margin-right: 10px;
+}
+
+.description li {
+  list-style-type: disc;
+}
+
+.cardButton {
+  font-size: 0.9375rem;
+  background-color: var(--color-primary);
+  color: #ffffff;
+  border-radius: 60px;
+  padding: 15px 35px;
+  transition: all 0.2s linear;
+  margin-top: 1rem;
+}
+.cardButton:hover {
+  background-color: var(--color-primary-dark);
+}
+
+.upperDescription {
+  display: grid;
+  grid-template-columns: 1fr 2.1fr;
+  margin-bottom: 2rem;
+}
+
+.upperDescriptionHeading {
+  font-size: 1.5rem;
+  font-family: var(--font-family-2);
+  line-height: 1.5;
+  font-weight: 700;
+  color: var(--color-black);
+  margin-bottom: 20px;
+}
+.upperContent {
+  font-size: 1rem;
+}
+.upperImg {
+  width: 130px;
+  height: 130px;
+  position: relative;
+}
+
+.listContainer {
+  display: flex;
+  flex-wrap: wrap;
+  max-height: 175px;
+}
+.listItem {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: var(--color-black);
+  padding-bottom: 10px;
+  flex-basis: 50%;
+}
+.listItem .listIcon {
+  width: 25px;
+  height: 25px;
+  margin-right: 10px;
+  overflow: hidden;
+}
+.fontawesomeicons {
+  width: 1.2rem;
+  color: var(--color-primary);
+}
+
+@media screen and (max-width: 1240px) {
+  .sectionWrapper {
+    padding: 40px 30px;
+  }
+  .heading {
+    text-align: center;
+    font-size: 30px;
+  }
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .reverseContainer {
+    grid-template-columns: 1fr;
+  }
+  .reverseContainer .textContainer {
+    order: 0;
+  }
+  .reverseContainer .imageContainer {
+    order: 1;
+  }
+  .imageContainer {
+    margin: 40px 0;
+  }
+  .upperDescription {
+    grid-template-columns: 1fr;
+  }
+  .upperDescription .upperImg {
+    margin: auto;
+    width: 200px;
+    height: auto;
+  }
+  .upperDescription .upperContainer {
+    text-align: center;
+    margin-top: 1rem;
+  }
+  .upperHeading {
+    text-align: center;
+  }
+  .cardButton {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
+  .listContainer {
+    max-width: 500px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .sectionWrapper {
+    padding: 40px 16px;
+  }
+  .description {
+    font-size: 14px;
+  }
+  .upperDescriptionHeading {
+    font-size: 20px;
+  }
+  .upperContent {
+    font-size: 14px;
+  }
+  .upperHeading {
+    font-size: 14px;
+  }
+  .listContainer {
+    width: 100%;
+  }
+  .listItem {
+    font-size: 14px;
+  }
+}

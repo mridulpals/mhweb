@@ -1,0 +1,54 @@
+.landingContainer {
+  position: relative;
+  height: max-content;
+}
+.coverimgContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  width: 100vw;
+  z-index: 0;
+}
+
+.landingCards {
+  background-color: #001524;
+  padding: 5rem 1.25rem;
+  position: relative;
+  z-index: 1;
+}
+.landingCardContainer {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 30px;
+  column-gap: 40px;
+  justify-content: space-between;
+}
+.sectionContainer {
+  padding: 10rem 0;
+  position: relative;
+  z-index: 1;
+  background-color: rgb(80, 73, 146, 0.8);
+}
+.sectionClass > div {
+  grid-template-columns: 1.1fr 1fr;
+}
+
+@media only screen and (max-width: 1200px) {
+  .landingCardContainer {
+    grid-template-columns: 1fr;
+    max-width: 400px;
+  }
+  .sectionClass > div {
+    grid-template-columns: 1fr;
+  }
+  .sectionContainer {
+    padding: 5rem 0;
+  }
+}
+
+@media only screen and (max-width: 554px) {
+  .landingCardContainer {
+    max-width: 100%;
+  }
+}

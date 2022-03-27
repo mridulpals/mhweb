@@ -1,0 +1,132 @@
+.MeetTheTeamCard {
+  width: 350px;
+  height: 350px;
+  position: relative;
+  overflow: hidden;
+  cursor: pointer;
+  margin: 0 15px;
+}
+.CardOverlay {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  opacity: 0.4;
+  z-index: 2;
+  transition: 0.3s;
+}
+
+.TeamCardImg {
+  transition: 0.3s;
+}
+
+.TeamCardTextCont {
+  text-align: left;
+  position: absolute;
+  width: 100%;
+  bottom: 40px;
+  /* z-index: 0; */
+  transition: 0.5s;
+  /* overflow: hidden; */
+  color: white;
+}
+
+.TeamCardTextCont .TeamCardTextOne {
+  width: max-content;
+  font-size: 0.8rem;
+  background-color: #1f7dcf;
+  /* transition: 0.3; */
+  padding: 6px 15px;
+}
+
+.TeamCardTextCont .TeamCardTextTwo {
+  width: max-content;
+  background-color: #1f7dcf;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  padding: 3px 15px;
+  font-weight: 700;
+}
+
+.MeetTheTeamCard:hover > .TeamCardTextCont {
+  transform: translateX(-95%);
+}
+
+.MeetTheTeamCard:hover > .CardOverlay {
+  display: block;
+}
+
+.MeetTheTeamCard:hover .TeamCardImg {
+  transform: scale(1.05);
+}
+
+.TeamCardPlus {
+  position: absolute;
+  transform: translate(-50%, -50%) rotate(0);
+  /* transform: translateY(-100%); */
+  width: 50px;
+  height: 50px;
+  left: 50%;
+  top: -50%;
+  z-index: 3;
+  color: white;
+
+  /* --- Transition and animation time should be same ---  */
+  --plusTransitionTime: 0.4s;
+  transition: all var(--plusTransitionTime) ease-out;
+}
+
+.MeetTheTeamCard:hover .TeamCardPlus {
+  top: 50%;
+  /* transform: rotate(90deg) translate(-50%, -50%); */
+  transform-origin: 0 0;
+  animation: rotate var(--plusTransitionTime);
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg) translate(-50%, -50%);
+    transform-origin: 0 0;
+  }
+  to {
+    transform: rotate(1080deg) translate(-50%, -50%);
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 767px) {
+  .MeetTheTeamCard {
+    margin-bottom: 30px;
+    width: 60%;
+  }
+
+  .TeamCardTextCont .TeamCardTextOne {
+    font-size: 0.7rem !important;
+  }
+  .TeamCardTextCont .TeamCardTextTwo {
+    font-size: 1rem !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .MeetTheTeamCard {
+    width: 100%;
+    max-width: 300px;
+    margin: 0 auto 30px;
+  }
+
+  .TeamCardTextCont .TeamCardTextOne {
+    font-size: 0.6rem !important;
+  }
+  .TeamCardTextCont .TeamCardTexTtwo {
+    font-size: 0.9rem !important;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+  .MeetTheTeamCard {
+    min-height: 350px;
+  }
+}

@@ -1,0 +1,147 @@
+.headerContainer {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #ffffff;
+  border-bottom: 4px solid #eaeaea;
+  padding: 1rem 0;
+  position: relative;
+  z-index: 10;
+}
+.nav {
+  /* max-width: var(--max-width-layout);
+  min-width: 1200px; */
+  margin: auto;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo {
+  max-width: 150px;
+  max-height: 150px;
+  margin-left: auto;
+}
+
+.logoContainer {
+  cursor: pointer;
+}
+
+.logoContainer h1 {
+  font-size: 25px;
+  line-height: 1.2;
+  font-family: var(--font-family-2);
+  color: #222222;
+  font-weight: 700;
+  text-align: right;
+  margin-top: 0.5rem;
+}
+.logoContainer p {
+  font-size: 1.0625rem;
+  line-height: 1.5rem;
+  color: #333333;
+  margin: 0;
+  text-align: right;
+}
+
+.menuContainer {
+  display: flex;
+  align-items: center;
+  height: 64px;
+  margin-right: auto;
+}
+
+.menuItem {
+  padding: 0 1rem;
+  font-size: 1rem;
+  color: #333333;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.2s linear;
+}
+.menuItem:hover {
+  color: var(--color-primary);
+}
+
+.searchContainer {
+  padding: 0 1rem;
+  min-width: 50px;
+}
+
+.hamMenuContainer {
+  width: 50px;
+  height: 50px;
+  color: #ffffff;
+  background-color: var(--color-primary);
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hamMenuContainer .icon {
+  width: 35px;
+  height: 35px;
+}
+.searchIcon {
+  width: 15px;
+}
+@media screen and (max-width: 1240px) {
+  .nav {
+    flex-direction: column;
+    width: 100%;
+  }
+  .logoContainer {
+    width: 100%;
+    order: 0;
+    padding-bottom: 1rem;
+  }
+  .logoContainer .logo {
+    margin: auto;
+  }
+  .logoContainer h1,
+  .logoContainer p {
+    text-align: center;
+  }
+  .menuContainer {
+    margin: auto;
+    order: 2;
+    height: max-content;
+  }
+  .searchContainer {
+    order: 1;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .menuContainer {
+    flex-direction: column;
+    width: 100%;
+  }
+  .mobMenuContainer {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 1.25rem;
+  }
+  .mobMenuContainer .menuHeader button {
+    font-weight: 500;
+    padding: 1rem 0;
+  }
+  .menuAccordion {
+    width: 100% !important;
+  }
+  .menuAccordion > div {
+    margin-bottom: 0;
+    border: 0;
+  }
+  .menuAccordion button {
+    justify-content: space-between;
+  }
+}

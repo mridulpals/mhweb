@@ -1,0 +1,117 @@
+.motherDivBigPicture {
+  margin-top: 150px;
+  background-image: url(../../public/assets/imageedit_4_9580401531.png);
+  background-position: bottom right;
+  background-repeat: no-repeat;
+  background-size: 33% auto;
+}
+.ourStoryContainer {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 30px;
+  margin-top: 50px;
+}
+.ourStoryImage {
+  /* height: 250px; */
+  /* width: 30%; */
+  width: 100%;
+  max-height: 600px;
+  border-radius: 8px;
+  overflow: hidden;
+  position: relative;
+}
+.ourStoryText {
+  /* width: 70%; */
+  padding: 0 20px 20px 20px;
+  float: right;
+}
+.ourStoryText h2 {
+  padding: 0px 0px 20px 0px;
+  font-weight: 700;
+}
+.ourStoryText p {
+  line-height: 2;
+}
+.planHead {
+  padding: 40px 20px 10px 20px;
+}
+.planHead h2 {
+  font-weight: 700;
+}
+.planBreakup {
+  background-color: #d3d2d2;
+  padding: 40px;
+  margin: 0 20px 50px 20px;
+}
+.planBreakup h3 {
+  text-decoration: underline;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+.planBreakup ul li {
+  list-style-type: disc;
+}
+.bottomButton {
+  margin: 50px 0;
+}
+.bigPicturePreFooter {
+  display: flex;
+  flex-direction: column;
+  padding-left: 15px;
+  padding-bottom: 60px;
+}
+.bottomButton {
+  background-color: greenyellow;
+  padding: 15px 35px;
+  margin-top: 45px;
+  margin-bottom: 200px;
+}
+
+@media screen and (max-width: 1240px) {
+  .motherDivBigPicture {
+    margin-top: 0;
+  }
+  .ourStoryContainer {
+    grid-template-columns: 1fr;
+    padding: 20px;
+  }
+  .ourStoryImage {
+    margin: auto;
+    width: 200px;
+    height: 250px;
+  }
+}
+
+@media only screen and (max-width: 750px) {
+  .ourStoryContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  .ourStoryImage {
+    margin: auto;
+  }
+  .ourStoryText {
+    margin: auto;
+  }
+  .ourStoryText h2 {
+    text-align: center;
+    margin: 30px 0px 10px 0px;
+  }
+  .ourStoryText {
+    width: 100%;
+  }
+  .planBreakup {
+    padding: 20px;
+  }
+  .leafElement,
+  .bottomButtomWrap {
+    margin: auto;
+  }
+  .bottomButton {
+    margin-bottom: 100px;
+  }
+  .motherDivBigPicture {
+    background-position: bottom right;
+    background-size: 40% auto;
+  }
+}

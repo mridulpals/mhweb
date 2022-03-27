@@ -1,0 +1,103 @@
+.card {
+  /* width: 30%; */
+  width: 100%;
+  min-width: 340px;
+  max-width: 400px;
+  margin: auto;
+  border-radius: 8px;
+  background-color: #425765;
+  padding: 1.5rem;
+  cursor: pointer;
+}
+
+.CardBody {
+  margin-bottom: 25px;
+  margin-top: 10px;
+  width: 100%;
+  height: 400px;
+  position: relative;
+}
+
+.CardHeading {
+  display: flex;
+  justify-content: space-between;
+  height: 60px;
+  white-space: pre-wrap;
+}
+
+.CardHeading h4 {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-family: var(--font-family-2);
+  line-height: 1.5;
+}
+
+.card .FontAwesomeIcon {
+  color: var(--color-primary);
+  width: 30px;
+  height: 30px;
+  margin-bottom: 1rem;
+}
+
+.CardBottom {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.CardBottomTextCont {
+  width: 100%;
+  text-align: left;
+}
+
+.CardBottom button {
+  margin-top: 1.75rem;
+}
+
+.CardBottomTextCont h6 {
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 400;
+}
+
+@media only screen and (max-width: 767px) {
+  .card {
+    width: 100%;
+    margin-bottom: 1rem;
+    padding: 1.5rem 1rem;
+  }
+  .card:last-of-type {
+    margin-bottom: 0;
+  }
+  .CardHeading {
+    height: auto;
+    /* flex-direction: column-reverse; */
+    white-space: normal;
+    margin-bottom: 1rem;
+  }
+}
+@media only screen and (max-width: 1350px) {
+  .card {
+    width: 100%;
+  }
+  .CardHeading h6 {
+    font-size: 1.2rem;
+  }
+  .CardBottomTextCont h6 {
+    font-size: 1.2rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .card {
+    width: 100%;
+    margin-bottom: 1rem;
+    min-width: auto;
+  }
+  .card:last-of-type {
+    margin-bottom: 0;
+  }
+}

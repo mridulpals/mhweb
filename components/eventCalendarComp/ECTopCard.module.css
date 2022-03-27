@@ -1,0 +1,21 @@
+.ECTopCard {
+  width: 50%;
+  height: 325px;
+  /* background-color: blue; */
+  color: white;
+  padding: 35px;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+.ECTopCard h1 {
+  /* height: 60%; */
+  margin-bottom: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+  .ECTopCard {
+    width: 50%;
+    height: 360px;
+  }
+}

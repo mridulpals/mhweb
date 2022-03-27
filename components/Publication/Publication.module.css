@@ -1,0 +1,78 @@
+.PubImgCont {
+  /* height: 20%; */
+  width: 10%;
+  margin: 0 50px;
+}
+
+.PubImgCont:first-of-type {
+  margin-left: 20px;
+}
+
+.PubImgCont:last-of-type {
+  margin-right: 0;
+}
+
+.PubItems {
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 40px;
+  /* justify-content: space-evenly; */
+  /* flex-wrap: wrap; */
+}
+
+.PubCont {
+  margin-bottom: 5rem;
+}
+
+.PubCont h2 {
+  margin-bottom: 35px;
+  font-size: 1.5rem;
+  font-weight: 700;
+}
+
+.PubImg {
+  width: 100%;
+  height: 100%;
+}
+
+@media only screen and (max-width: 992px) {
+  .PubImgCont {
+    width: 50%;
+    padding: 10px 0;
+    margin-bottom: 20px;
+  }
+  .PubImgCont:last-of-type {
+    margin-right: 50px;
+  }
+  .PubImgCont:first-of-type {
+    margin-left: 50px;
+  }
+  .PubItems {
+    flex-direction: column;
+    align-items: center;
+    width: 45%;
+  }
+  .PubItemsCont {
+    display: flex;
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .PubImgCont {
+    width: 80%;
+  }
+  .PubItemsCont {
+    display: block;
+  }
+  .PubItems {
+    margin: auto;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .PubImgCont {
+    width: 100%;
+  }
+}

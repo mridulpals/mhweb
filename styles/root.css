@@ -1,0 +1,40 @@
+:root {
+  /* Color */
+  --color-primary: #8bc34a;
+  --color-primary-dark: #7baf42;
+  --color-secondary: #f8f6f3;
+  --color-blue-dark: #001524;
+  --color-black: #333333;
+  --color-black-light: #33333399; /* --color-black 0.6 */
+  --color-grey: #ced4da;
+  --color-grey-dark: #b8b8b8;
+  --color-grey-darker: #6c757d;
+  --color-grey-light: #eaeaee;
+  --color-grey-lightest: #f8f8f8;
+
+  /* Font Family */
+  --font-family-1: "Open Sans", sans-serif;
+  --font-family-2: "Merriweather", serif;
+
+  /* layout Width */
+  --max-width-layout: 1200px;
+  --min-width-layout: 1200px;
+
+  /* Spacing */
+  --spacing-regular: 5rem;
+}
+
+/* For main Layout section */
+.mainLayout {
+  width: 100%;
+  max-width: var(--max-width-layout);
+  min-width: var(--min-width-layout);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1240px) {
+  .mainLayout {
+    min-width: auto;
+  }
+}

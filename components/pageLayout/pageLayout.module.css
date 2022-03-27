@@ -1,0 +1,4 @@
+.pageWrapper {
+  width: 100%;
+  background-image: linear-gradient(#ffffff, var(--color-secondary) 100%);
+}

@@ -1,0 +1,61 @@
+.mainguidelinediv{
+    margin: 6rem;
+    text-align: justify;
+    
+}
+.mainguidelinediv h4 {
+    font-family: var(--font-family-2);
+    
+
+}
+.mainguidelinediv h5{
+    font-family: var(--font-family-2);
+}
+
+.guidelinesdivone{
+    text-align: center;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+}
+
+.guidelinesheading{
+    font-family: var(--font-family-2);
+}
+.listtag li{
+    list-style: disc;
+
+}
+
+.listtag li{
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+}
+.guidelinesdivfour {
+   line-height: 3rem;
+}
+.guidelinesdivfive h4 {
+    margin-bottom: 2rem;
+}
+.guidelinesdivfive p{
+    margin-bottom: 0.8rem;
+}
+.centertext{
+    text-align: center;
+    margin-top: 2rem ;
+    margin-bottom: 2rem !important;
+}
+.download{
+    display: flex;
+    justify-content: center;
+}
+@media only screen and (max-width:986px){
+    .mainguidelinediv{
+        margin: 3rem;
+    }
+    .guidelinesdivfour p{
+        line-height: normal;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
+    }
+
+}
